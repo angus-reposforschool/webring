@@ -2,12 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Quicksand;
+    font-family: Quicksand, 'Courier New';
     font-weight: 500;
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(#5a495f, #191010);
     display: flex;
     justify-content: center;
@@ -57,7 +57,7 @@ body {
     width: 45vw;
     height: 75vh;
     transform: translateY(-60px);
-    box-shadow: 8px 8px, 0px 0px 300px 30px #94779d;
+    box-shadow: 8px 8px black, 0px 0px 300px 30px #94779d;
 }
 
 .artbox {
@@ -114,6 +114,18 @@ body {
 
 #asciiart span {
     font-family: monospace;
+}
+
+.asciiyellow {
+    color: #F6C50C;
+}
+
+.asciiwhite {
+    color: #CECECE;
+}
+
+.asciiorange {
+    color: #F3B904;;
 }
 
 #about {
