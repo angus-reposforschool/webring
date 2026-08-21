@@ -14,6 +14,7 @@ body {
     align-items: center;
 }
 
+/* create stars */
 .stars {
     position: fixed;
     top: 0;
@@ -33,6 +34,8 @@ body {
     animation: twinkle 2s infinite alternate ease-in-out;
 }
 
+
+/* star flicker */
 @keyframes twinkle {
     0% {
         opacity: 0.8;
@@ -50,34 +53,95 @@ body {
 .window {
     display: flex;
     flex-direction: column;
-    border: solid 2px red;
+    border: solid 2px #000000;
     width: 45vw;
     height: 75vh;
     transform: translateY(-60px);
+    box-shadow: 8px 8px, 0px 0px 300px 30px #94779d;
 }
 
 .artbox {
     flex: 30;
-    border: solid 2px yellow;
+    display: flex;
+    border-bottom: solid 2px #000000;
+    overflow: hidden;
+    align-items: center;
+}
+
+.artbox img {
+    width: 100%;
+    object-fit: cover;
+    transform: translateY(35px);
 }
 
 .nav {
     flex: 11;
-    background: #422a2a;
-    border: solid 2px green;
+    display: flex;
+    background: #301e2e;
+    border-bottom: solid 2px #000000;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.nav a {
+    color: #eac9f4;
+    font-size: 3em;
+    text-decoration: none;
+    text-align: center;
 }
 
 .content {
     flex: 100;
-    background: #553737;
-    border: solid 2px blue;
+    display: flex;
+    flex-direction: column;
+    background: #51374f;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
 }
 
-.feet {
-    flex: 8;
-    border: solid 2px orange;
+#intro {
+    font-size: 2em;
+    padding-top: 20px;
+    color: #b09ab7;
 }
 
 #asciiart {
     font-family: monospace;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+#asciiart span {
+    font-family: monospace;
+}
+
+#about {
+    text-align: center;
+    font-size: 1.5em;
+    color: #b09ab7;
+}
+
+.feet {
+    flex: 8;
+    border-top: solid 2px #000000;
+    background: #5B3E77;
+}
+
+.feet p {
+    color: #eac9f4;
+    text-align: center;
+    padding-top: 9px;
+}
+
+/* below is new css for songs.html */
+
+#lyrics {
+    font-size: 1.5em;
+    overflow: scroll;
+    color: #b09ab7;
+}
+
+#song {
+    padding-top: 20px;
 }
